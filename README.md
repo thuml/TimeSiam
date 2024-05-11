@@ -1,3 +1,11 @@
+<!--
+ * @Author: dongjiaxiang 26361444+dongjiaxiang@users.noreply.github.com
+ * @Date: 2023-10-16 11:20:50
+ * @LastEditors: dongjiaxiang 26361444+dongjiaxiang@users.noreply.github.com
+ * @LastEditTime: 2024-05-11 11:15:12
+ * @FilePath: /TimeSiam_github/README.md
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
 
 # TimeSiam (ICML 2024)
 
@@ -26,5 +34,5 @@ If you find this repo useful, please cite our paper.
 
 ## Contact
 
-If you have any questions or want to use the code, please contact [djx20@mails.tsinghua.edu.cn](mailto:djx20@mails.tsinghua.edu.cn).
+We plan to open source the code in the future. If you have any questions or want to use the code, please contact [djx20@mails.tsinghua.edu.cn](mailto:djx20@mails.tsinghua.edu.cn).
 

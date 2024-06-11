@@ -18,51 +18,10 @@ data_dict = {
 }
 
 
-class DatasetCatalog:
-    DATASETS = {
-        'ETTh1': {
-            "root_path": "/storage/dataset/DSET924f39a246e2bcba76feef284556"
-        },
-        'ETTh2': {
-            "root_path": "/storage/dataset/DSETecc2e54a4c80a793255c932e7b72"
-        },
-        'ETTm1': {
-            "root_path": "/storage/dataset/DSET778fcf74414d8e186fd05350ebee"
-        },
-        'ETTm2': {
-            "root_path": "/storage/dataset/DSETe9eb0a5a4b40876add2dbd3acb6a"
-        },
-        'ECL': {
-            "root_path": "/storage/dataset/DSET73e1e542467986886113370b39d1"
-        },
-        'Traffic': {
-            "root_path": "/storage/dataset/DSET69dd739245f59853a74d98d2cc4c"
-        },
-        'Weather': {
-            "root_path": "/storage/dataset/DSETb990ae96465d9eff1bfff43e5eca"
-        },
-        'ILI': {
-            "root_path": "/storage/dataset/DSET8a91cb7146f58a081f7fe7561dea"
-        },
-        'Exchange': {
-            "root_path": "/storage/dataset/DSETffd84b7f4e4e81ad73db993d91e8"
-        },
-    }
-
-    @staticmethod
-    def get(name):
-        if name in DatasetCatalog.DATASETS:
-            return DatasetCatalog.DATASETS[name]
-
-        raise RuntimeError("Dataset not available: {}".format(name))
-
-
 def data_provider(args, flag):
 
     Data = data_dict[args.data]
-    Data_ATTRS = DatasetCatalog.get(args.data)
-    root_path = Data_ATTRS['root_path']
-    #root_path = args.root_path
+    root_path = args.root_path
     percent = args.percent
 
     timeenc = 0 if args.embed != 'timeF' else 1
